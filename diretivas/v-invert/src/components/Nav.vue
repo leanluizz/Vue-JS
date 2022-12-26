@@ -12,11 +12,12 @@ export default{
         }
     },
     class:{
-        widthIMG:"widthIMG"
+        widthIMG:"widthIMG",
+        titled:"titled"
     },
 }
 </script>
 <template>
     <img :src="RevertIcon" :class="{widthIMG:true}" alt="RevertIcon">
-    <h1>{{ this.title }}</h1>
+    <h1 :class="{titled:true}">{{ this.title }}</h1>
 </template>

@@ -1,6 +1,19 @@
 *{
     margin: 0;
 }
+@keyframes invertText {
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(360deg);}
+}
+@media (max-width:350px) {
+    #menu{
+        display: flex;
+        flex-direction: column;
+    }
+    #menu .widthIMG{
+        width:25%;
+    }
+}
 .menu{
     display: flex;
     margin-top: 0;
@@ -13,6 +26,9 @@
     -moz-osx-font-smoothing: grayscale;
     color:rgb(3, 48, 48);
     box-shadow: 5px 8px 5px gray;
+}
+.titled:hover{
+    animation: invertText 2s linear infinite;
 }
 .widthIMG{
     width:5%;
