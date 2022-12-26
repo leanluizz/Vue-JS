@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+}
+.menu{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 100px;
+    flex-direction: row;
+    align-items: center;
+    background: aquamarine;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:rgb(3, 48, 48);
+    box-shadow: 5px 8px 5px gray;
+}
+.widthIMG{
+    width:5%;
+}

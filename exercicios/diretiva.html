@@ -7,9 +7,33 @@
     <script src="/js/vue.min.js"></script>
 </head>
 <body class="exercicio">
+<<<<<<< HEAD
 
     <script>
         // ...
+=======
+    <div id="app">
+        <input type="text" v-model="name">
+        <div v-invert="name"></div>
+    </div>
+
+    <script>
+        Vue.directive('invert', {
+            componentUpdated(el, binding) {
+                const inverted = binding.value.split('')
+                const reverse = inverted.reverse()
+                const joined = reverse.join('')
+                el.innerHTML = joined
+            }
+        })
+
+        new Vue({
+            el:"#app",
+            data:{
+                name: ''
+            }
+        })
+>>>>>>> a9c9c3dc510010b83fef8d1503369a00675cb6ad
     </script>
 </body>
 </html>

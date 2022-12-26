@@ -13,7 +13,11 @@ html {
 
 body {
     margin: 0;
+<<<<<<< HEAD
     background-color: #0D262D;
+=======
+    background-image: linear-gradient(to left,rgb(23, 35, 49), rgb(46, 46, 46), black);
+>>>>>>> a9c9c3dc510010b83fef8d1503369a00675cb6ad
     color: #fff;
     height: 100%;
 }
