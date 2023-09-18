@@ -1,19 +1,16 @@
 
 <template>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-<button v-if="url" class="btn btn-light border-0 rounded-3 h-25 mt-3 me-2 p-2"><a class="text-dark link-offset-2 link-underline link-underline-opacity-0 font-monospace" :href="newQRCode" download>Download</a></button>
 <nav class="d-flex justify-content-between"> 
-<div class="d-flex flex-row p-5 mt-5">
-<img src="../src/assets/img/transferir.png" alt="icone"  class="p-1 icon">
-<h1 id="title" class="d-lg-none d-sm-block fs-5 text-center text-light bg-dark title">{{ title }}</h1>
-<h1 id="title" class="d-sm-none d-lg-block text-center text-light bg-dark title">{{ title }}</h1>
+<div class="d-flex flex-row">
+<img src="../src/assets/img/transferir.png" alt="icone"  class="mx-auto icon">
+<h1 id="title" class=" mx-auto text-center text-light bg-dark title">{{ title }}</h1>
 </div>
 </nav>
 
 <div class="centered p-5">
         <div v-if="url" class="output">
-            <img :src="newQRCode" alt="QRCode">
+            <img :src="newQRCode" class="QRCode p-2" alt="QRCode">
         </div>
 
         <div>
@@ -25,6 +22,7 @@
             :value="url" 
             @input="onData">
         </div>
+        <button v-if="url" class="mb-2 btn btn-light border-0 rounded-3 h-25 mt-3 me-2 p-2"><a class="text-dark link-offset-2 link-underline link-underline-opacity-0 font-monospace" :href="newQRCode" download>Download</a></button>
     </div>
 </template>
 
@@ -85,6 +83,7 @@ body
 }
 .title
 {
+    font-size: 3.5vw;
     font-family: monospace;
     white-space: nowrap;
     overflow: hidden;
@@ -93,8 +92,17 @@ body
 }
 .btn:hover
 {
-    background-color: rgb(2,66,255);
+    filter: invert(100%);
     font-weight: bolder;
 }
-
+@media (max-width:500px) {
+  .QRCode{
+    margin: auto;
+    width: 80%;
+}
+.output{
+  margin-left: 30%;
+  margin-right: 20%;
+}
+}
 </style>
