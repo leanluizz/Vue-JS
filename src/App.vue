@@ -2,9 +2,9 @@
 <template>
 
 <nav class="d-flex justify-content-between"> 
-<div class="d-flex flex-row">
-<img src="../src/assets/img/transferir.png" alt="icone"  class="mx-auto icon">
-<h1 id="title" class=" mx-auto text-center text-light bg-dark title">{{ title }}</h1>
+<div class="mx-auto d-flex flex-row">
+<img src="../src/assets/img/transferir.png" alt="icone"  class="p-0 icon">
+<h1 id="title" class="text-center text-light bg-dark title">{{ title }}</h1>
 </div>
 </nav>
 
