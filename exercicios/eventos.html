@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+<<<<<<< HEAD
+
+    <script>
+        // ...
+=======
+<div v-on:mousemove="position" id="app">
+<p>
+    {{contador}}
+</p>
+<p><button v-on:click="add">+1</button></p>
+
+<form v-on:submit="send">
+<input type="text">
+<button>Insert</button>
+<p>{{state}}</p>
+</form>
+
+<p>
+    Coordenadas: {{x}}, {{y}}
+</p>
+</div>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                contador: 0,
+                state:"",
+                x: 0,
+                y: 0
+            },
+            methods:{
+                add(){
+                    this.contador++
+                },
+                send(e){
+                    e.preventDefault()
+                    this.state += e.target[0].value;
+                    console.log(this.state);
+                },
+                position(e){
+                    this.x += e.clientX
+                    this.y += e.clientY
+                }
+                
+            }
+        })
+>>>>>>> a9c9c3dc510010b83fef8d1503369a00675cb6ad
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+<<<<<<< HEAD
+    background-color: #0D262D;
+=======
+    background-image: linear-gradient(to left,rgb(23, 35, 49), rgb(46, 46, 46), black);
+>>>>>>> a9c9c3dc510010b83fef8d1503369a00675cb6ad
+    color: #fff;
+    height: 100%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+.exercicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: #333;
+    color: #fff;
+    font-size: 3rem;
+}
+
+button, input {
+    font-size: 3rem;
+}

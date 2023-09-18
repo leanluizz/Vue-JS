@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Binding</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+<<<<<<< HEAD
+</head>
+<body class="exercicio">
+
+    <script>
+        // ...
+=======
+    <style>
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body class="exercicio">
+    <div id="app">
+        <p><a v-bind:href="link" target="_blank">Cod3r</a></p>
+        <p><a :href="site" target="_blank">Site da Cod3r</a></p>
+        <p>
+            <input type="text" v-model="nome">
+            <p><span>{{nome}}</span></p>
+        </p>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                link: "https://youtube.com/cod3rcursos",
+                site:"https://www.cod3r.com.br/",
+                nome: ""
+            },
+            watch: {
+                nome(novoValor){
+                    console.log(novoValor.toUpperCase())
+                }
+            }
+        })
+>>>>>>> a9c9c3dc510010b83fef8d1503369a00675cb6ad
+    </script>
+</body>
+</html>

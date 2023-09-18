@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>If & For</title>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+
+    <script>
+        // ...
+=======
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+    <div id="app">
+        <p v-for="(aluno, i) in alunos">
+           {{i + 1}}) Aluno: {{aluno.nome}}, Nota: {{aluno.nota}}
+           <!--v-if="Renderiza caso condicional for true"-->
+        <img v-if="aluno.nota >= 5" src="images/1200px-P_yes_green.svg.png" width="50px">
+        <img v-else="aluno.nota < 5" src="images/No_sign.svg.png" width="50px">
+        </p>
+        <!--v-show="Renderiza caso condicional for true"-->
+        <h1 v-show="alunos[0].nota > 0" >Alunos aprovados e reprovados</h1>
+    </div>
+    <script>
+
+      new Vue({
+            el:"#app",
+            data:{
+                alunos:[
+                    {nome: "Ana", nota: 7.8},
+                    {nome: "Diego", nota: 2.8},
+                    {nome: "Pedrin", nota: 5.0},
+                    {nome: "Dagoberto", nota: 1.5}
+                    ]
+            }
+        })
+>>>>>>> a9c9c3dc510010b83fef8d1503369a00675cb6ad
+    </script>
+</body>
+</html>

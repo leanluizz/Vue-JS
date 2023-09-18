@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicando Estilo</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+    <style>
+        .vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body class="exercicio">
+<<<<<<< HEAD
+
+    <script>
+        // ...
+=======
+    <div id="app" v-click="aplicaCor = !aplicaCor" v-bind:class="{'vermelho': aplicaCor}">
+        Teste
+    </div>
+    <script>
+        new Vue({
+            el: "#app",
+            data:{
+                aplicaCor: false
+            }
+        })
+>>>>>>> a9c9c3dc510010b83fef8d1503369a00675cb6ad
+    </script>
+</body>
+</html>
