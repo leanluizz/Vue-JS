@@ -55,10 +55,6 @@ Se você deseja contribuir para este projeto, siga as etapas abaixo:
 3. Faça suas alterações e adições.
 4. Envie um pull request.
 
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE.md).
-
 ## Contato
 
 Para entrar em contato com a equipe de desenvolvimento ou relatar problemas, utilize os seguintes canais:
