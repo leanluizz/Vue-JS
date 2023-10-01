@@ -32,7 +32,7 @@ export default{
 
 <template>
     <div id="main">
-<textarea  type="text" v-model="output" :class="{writing:true}"></textarea>
-<textarea  v-invert="output" :class="{outputArea:true}" disabled></textarea>
+<textarea type="text" v-model="output" :class="{writing:true}"></textarea>
+<textarea v-invert="output" :class="{outputArea:true}" disabled></textarea>
     </div>
 </template>

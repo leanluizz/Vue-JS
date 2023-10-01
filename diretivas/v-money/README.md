@@ -1,4 +1,4 @@
-# v-invert
+# v-money
 
 ## Project setup
 ```
